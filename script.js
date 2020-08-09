@@ -35,7 +35,7 @@ function initMap() {
     //     });
 
     var temp2;
-    fetch('data_log.json').then(function(response){
+    fetch('https://jefferson-geodata-visualization.s3.amazonaws.com/data_log.json').then(function(response){
         return response.json();
     }).then(function(obj){
         const flightPath = new google.maps.Polyline({
