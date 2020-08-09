@@ -9,7 +9,7 @@ function initMap() {
             mapTypeId: "satellite"
         });
 
-    url = './data_log.json';
+    url = 'https://jefferson-geodata-visualization.s3.amazonaws.com/data_log.json';
     let myRequest = new Request(url);
     myRequest.mode = 'no-cors';
 
